@@ -1,0 +1,125 @@
+{
+  "incumbent_ids": [
+    26
+  ],
+  "rejected_config_ids": [
+    2,
+    4,
+    6,
+    20,
+    24
+  ],
+  "incumbents_changed": 6,
+  "trajectory": [
+    {
+      "config_ids": [
+        2
+      ],
+      "costs": [
+        0.44523113594441777
+      ],
+      "trial": 3,
+      "walltime": 1091.815076828003
+    },
+    {
+      "config_ids": [
+        4
+      ],
+      "costs": [
+        0.4339858425953612
+      ],
+      "trial": 5,
+      "walltime": 1811.2788290977478
+    },
+    {
+      "config_ids": [
+        6
+      ],
+      "costs": [
+        0.4237123595357487
+      ],
+      "trial": 8,
+      "walltime": 2932.7067646980286
+    },
+    {
+      "config_ids": [
+        20
+      ],
+      "costs": [
+        0.42315700719724936
+      ],
+      "trial": 25,
+      "walltime": 9189.996912240982
+    },
+    {
+      "config_ids": [
+        24
+      ],
+      "costs": [
+        0.3912258777256957
+      ],
+      "trial": 30,
+      "walltime": 11005.796845197678
+    },
+    {
+      "config_ids": [
+        26
+      ],
+      "costs": [
+        0.36873524459256046
+      ],
+      "trial": 33,
+      "walltime": 12074.005821466446
+    }
+  ],
+  "state": {
+    "tracker": {
+      "1,0": [
+        [
+          0,
+          [
+            {
+              "batch_size": 66,
+              "budget_type": "img_size",
+              "cv_count": 2,
+              "dataset": "deepweedsx_balanced",
+              "datasetpath": "/pfs/data5/home/fr/fr_fr/fr_gg131/automl-project/data",
+              "device": "cuda",
+              "dropout_rate": 0.2,
+              "global_avg_pooling": true,
+              "kernel_size": 3,
+              "learning_rate_init": 0.0014768323303820281,
+              "n_channels_conv_0": 248,
+              "n_channels_fc_0": 124,
+              "n_conv_layers": 2,
+              "n_fc_layers": 2,
+              "use_BN": true,
+              "n_channels_conv_1": 433,
+              "n_channels_fc_1": 62
+            },
+            {
+              "batch_size": 58,
+              "budget_type": "img_size",
+              "cv_count": 2,
+              "dataset": "deepweedsx_balanced",
+              "datasetpath": "/pfs/data5/home/fr/fr_fr/fr_gg131/automl-project/data",
+              "device": "cuda",
+              "dropout_rate": 0.2,
+              "global_avg_pooling": true,
+              "kernel_size": 3,
+              "learning_rate_init": 0.005965692750152111,
+              "n_channels_conv_0": 222,
+              "n_channels_fc_0": 122,
+              "n_conv_layers": 2,
+              "n_fc_layers": 2,
+              "use_BN": false,
+              "n_channels_conv_1": 442,
+              "n_channels_fc_1": 62
+            }
+          ]
+        ]
+      ]
+    },
+    "next_bracket": 0
+  }
+}

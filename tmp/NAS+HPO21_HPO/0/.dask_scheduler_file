@@ -1,0 +1,215 @@
+{
+  "type": "Scheduler",
+  "id": "Scheduler-22640bd8-8890-4995-b801-32fe43674e74",
+  "address": "tcp://127.0.0.1:44797",
+  "services": {
+    "dashboard": 39413
+  },
+  "started": 1692834377.5741415,
+  "workers": {
+    "tcp://127.0.0.1:33945": {
+      "type": "Worker",
+      "id": 1,
+      "host": "127.0.0.1",
+      "resources": {},
+      "local_directory": "/pfs/data5/home/fr/fr_fr/fr_gg131/automl-project/tmp/NAS+HPO21_HPO/0/dask-scratch-space/worker-z1kmcjlm",
+      "name": 1,
+      "nthreads": 1,
+      "memory_limit": 4294967296,
+      "last_seen": 1692834386.827983,
+      "services": {
+        "dashboard": 32773
+      },
+      "metrics": {
+        "task_counts": {},
+        "bandwidth": {
+          "total": 100000000,
+          "workers": {},
+          "types": {}
+        },
+        "digests_total_since_heartbeat": {},
+        "managed_bytes": 0,
+        "spilled_bytes": {
+          "memory": 0,
+          "disk": 0
+        },
+        "transfer": {
+          "incoming_bytes": 0,
+          "incoming_count": 0,
+          "incoming_count_total": 0,
+          "outgoing_bytes": 0,
+          "outgoing_count": 0,
+          "outgoing_count_total": 0
+        },
+        "event_loop_interval": 0.02,
+        "cpu": 0.0,
+        "memory": 329703424,
+        "time": 1692834380.6078343,
+        "host_net_io": {
+          "read_bps": 0.0,
+          "write_bps": 0.0
+        },
+        "host_disk_io": {
+          "read_bps": 0.0,
+          "write_bps": 0.0
+        },
+        "num_fds": 17
+      },
+      "status": "running",
+      "nanny": "tcp://127.0.0.1:35791"
+    },
+    "tcp://127.0.0.1:36159": {
+      "type": "Worker",
+      "id": 2,
+      "host": "127.0.0.1",
+      "resources": {},
+      "local_directory": "/pfs/data5/home/fr/fr_fr/fr_gg131/automl-project/tmp/NAS+HPO21_HPO/0/dask-scratch-space/worker-6j31ik1d",
+      "name": 2,
+      "nthreads": 1,
+      "memory_limit": 4294967296,
+      "last_seen": 1692834386.8300123,
+      "services": {
+        "dashboard": 42117
+      },
+      "metrics": {
+        "task_counts": {},
+        "bandwidth": {
+          "total": 100000000,
+          "workers": {},
+          "types": {}
+        },
+        "digests_total_since_heartbeat": {},
+        "managed_bytes": 0,
+        "spilled_bytes": {
+          "memory": 0,
+          "disk": 0
+        },
+        "transfer": {
+          "incoming_bytes": 0,
+          "incoming_count": 0,
+          "incoming_count_total": 0,
+          "outgoing_bytes": 0,
+          "outgoing_count": 0,
+          "outgoing_count_total": 0
+        },
+        "event_loop_interval": 0.02,
+        "cpu": 0.0,
+        "memory": 329928704,
+        "time": 1692834380.5492582,
+        "host_net_io": {
+          "read_bps": 0.0,
+          "write_bps": 0.0
+        },
+        "host_disk_io": {
+          "read_bps": 0.0,
+          "write_bps": 0.0
+        },
+        "num_fds": 17
+      },
+      "status": "running",
+      "nanny": "tcp://127.0.0.1:42733"
+    },
+    "tcp://127.0.0.1:40339": {
+      "type": "Worker",
+      "id": 0,
+      "host": "127.0.0.1",
+      "resources": {},
+      "local_directory": "/pfs/data5/home/fr/fr_fr/fr_gg131/automl-project/tmp/NAS+HPO21_HPO/0/dask-scratch-space/worker-vn38iam9",
+      "name": 0,
+      "nthreads": 1,
+      "memory_limit": 4294967296,
+      "last_seen": 1692834386.8290749,
+      "services": {
+        "dashboard": 45271
+      },
+      "metrics": {
+        "task_counts": {},
+        "bandwidth": {
+          "total": 100000000,
+          "workers": {},
+          "types": {}
+        },
+        "digests_total_since_heartbeat": {},
+        "managed_bytes": 0,
+        "spilled_bytes": {
+          "memory": 0,
+          "disk": 0
+        },
+        "transfer": {
+          "incoming_bytes": 0,
+          "incoming_count": 0,
+          "incoming_count_total": 0,
+          "outgoing_bytes": 0,
+          "outgoing_count": 0,
+          "outgoing_count_total": 0
+        },
+        "event_loop_interval": 0.02,
+        "cpu": 0.0,
+        "memory": 329707520,
+        "time": 1692834380.5851002,
+        "host_net_io": {
+          "read_bps": 0.0,
+          "write_bps": 0.0
+        },
+        "host_disk_io": {
+          "read_bps": 0.0,
+          "write_bps": 0.0
+        },
+        "num_fds": 17
+      },
+      "status": "running",
+      "nanny": "tcp://127.0.0.1:39807"
+    },
+    "tcp://127.0.0.1:42157": {
+      "type": "Worker",
+      "id": 3,
+      "host": "127.0.0.1",
+      "resources": {},
+      "local_directory": "/pfs/data5/home/fr/fr_fr/fr_gg131/automl-project/tmp/NAS+HPO21_HPO/0/dask-scratch-space/worker-oe3ka2wx",
+      "name": 3,
+      "nthreads": 1,
+      "memory_limit": 4294967296,
+      "last_seen": 1692834386.6402736,
+      "services": {
+        "dashboard": 34311
+      },
+      "metrics": {
+        "task_counts": {},
+        "bandwidth": {
+          "total": 100000000,
+          "workers": {},
+          "types": {}
+        },
+        "digests_total_since_heartbeat": {},
+        "managed_bytes": 0,
+        "spilled_bytes": {
+          "memory": 0,
+          "disk": 0
+        },
+        "transfer": {
+          "incoming_bytes": 0,
+          "incoming_count": 0,
+          "incoming_count_total": 0,
+          "outgoing_bytes": 0,
+          "outgoing_count": 0,
+          "outgoing_count_total": 0
+        },
+        "event_loop_interval": 0.02,
+        "cpu": 0.0,
+        "memory": 331771904,
+        "time": 1692834380.6075213,
+        "host_net_io": {
+          "read_bps": 0.0,
+          "write_bps": 0.0
+        },
+        "host_disk_io": {
+          "read_bps": 0.0,
+          "write_bps": 0.0
+        },
+        "num_fds": 17
+      },
+      "status": "running",
+      "nanny": "tcp://127.0.0.1:46763"
+    }
+  }
+}

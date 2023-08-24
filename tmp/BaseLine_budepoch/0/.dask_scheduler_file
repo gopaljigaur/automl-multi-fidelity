@@ -1,0 +1,215 @@
+{
+  "type": "Scheduler",
+  "id": "Scheduler-3b763b95-0120-430c-a533-801b977e6b5a",
+  "address": "tcp://127.0.0.1:33991",
+  "services": {
+    "dashboard": 35553
+  },
+  "started": 1692840787.3239045,
+  "workers": {
+    "tcp://127.0.0.1:35897": {
+      "type": "Worker",
+      "id": 0,
+      "host": "127.0.0.1",
+      "resources": {},
+      "local_directory": "/pfs/data5/home/fr/fr_fr/fr_gg131/automl-project/tmp/BaseLine_budepoch/0/dask-scratch-space/worker-rfo1zufn",
+      "name": 0,
+      "nthreads": 1,
+      "memory_limit": 4294967296,
+      "last_seen": 1692840797.5486476,
+      "services": {
+        "dashboard": 40627
+      },
+      "metrics": {
+        "task_counts": {},
+        "bandwidth": {
+          "total": 100000000,
+          "workers": {},
+          "types": {}
+        },
+        "digests_total_since_heartbeat": {},
+        "managed_bytes": 0,
+        "spilled_bytes": {
+          "memory": 0,
+          "disk": 0
+        },
+        "transfer": {
+          "incoming_bytes": 0,
+          "incoming_count": 0,
+          "incoming_count_total": 0,
+          "outgoing_bytes": 0,
+          "outgoing_count": 0,
+          "outgoing_count_total": 0
+        },
+        "event_loop_interval": 0.02,
+        "cpu": 0.0,
+        "memory": 334024704,
+        "time": 1692840790.5632367,
+        "host_net_io": {
+          "read_bps": 0.0,
+          "write_bps": 0.0
+        },
+        "host_disk_io": {
+          "read_bps": 0.0,
+          "write_bps": 0.0
+        },
+        "num_fds": 17
+      },
+      "status": "running",
+      "nanny": "tcp://127.0.0.1:35665"
+    },
+    "tcp://127.0.0.1:40397": {
+      "type": "Worker",
+      "id": 3,
+      "host": "127.0.0.1",
+      "resources": {},
+      "local_directory": "/pfs/data5/home/fr/fr_fr/fr_gg131/automl-project/tmp/BaseLine_budepoch/0/dask-scratch-space/worker-26fcnde0",
+      "name": 3,
+      "nthreads": 1,
+      "memory_limit": 4294967296,
+      "last_seen": 1692840797.5475411,
+      "services": {
+        "dashboard": 43005
+      },
+      "metrics": {
+        "task_counts": {},
+        "bandwidth": {
+          "total": 100000000,
+          "workers": {},
+          "types": {}
+        },
+        "digests_total_since_heartbeat": {},
+        "managed_bytes": 0,
+        "spilled_bytes": {
+          "memory": 0,
+          "disk": 0
+        },
+        "transfer": {
+          "incoming_bytes": 0,
+          "incoming_count": 0,
+          "incoming_count_total": 0,
+          "outgoing_bytes": 0,
+          "outgoing_count": 0,
+          "outgoing_count_total": 0
+        },
+        "event_loop_interval": 0.02,
+        "cpu": 0.0,
+        "memory": 333971456,
+        "time": 1692840790.4757543,
+        "host_net_io": {
+          "read_bps": 0.0,
+          "write_bps": 0.0
+        },
+        "host_disk_io": {
+          "read_bps": 0.0,
+          "write_bps": 0.0
+        },
+        "num_fds": 17
+      },
+      "status": "running",
+      "nanny": "tcp://127.0.0.1:34921"
+    },
+    "tcp://127.0.0.1:45721": {
+      "type": "Worker",
+      "id": 1,
+      "host": "127.0.0.1",
+      "resources": {},
+      "local_directory": "/pfs/data5/home/fr/fr_fr/fr_gg131/automl-project/tmp/BaseLine_budepoch/0/dask-scratch-space/worker-wdrx9t3i",
+      "name": 1,
+      "nthreads": 1,
+      "memory_limit": 4294967296,
+      "last_seen": 1692840797.3571343,
+      "services": {
+        "dashboard": 43465
+      },
+      "metrics": {
+        "task_counts": {},
+        "bandwidth": {
+          "total": 100000000,
+          "workers": {},
+          "types": {}
+        },
+        "digests_total_since_heartbeat": {},
+        "managed_bytes": 0,
+        "spilled_bytes": {
+          "memory": 0,
+          "disk": 0
+        },
+        "transfer": {
+          "incoming_bytes": 0,
+          "incoming_count": 0,
+          "incoming_count_total": 0,
+          "outgoing_bytes": 0,
+          "outgoing_count": 0,
+          "outgoing_count_total": 0
+        },
+        "event_loop_interval": 0.02,
+        "cpu": 0.0,
+        "memory": 329818112,
+        "time": 1692840790.5641797,
+        "host_net_io": {
+          "read_bps": 0.0,
+          "write_bps": 0.0
+        },
+        "host_disk_io": {
+          "read_bps": 0.0,
+          "write_bps": 0.0
+        },
+        "num_fds": 17
+      },
+      "status": "running",
+      "nanny": "tcp://127.0.0.1:34645"
+    },
+    "tcp://127.0.0.1:46537": {
+      "type": "Worker",
+      "id": 2,
+      "host": "127.0.0.1",
+      "resources": {},
+      "local_directory": "/pfs/data5/home/fr/fr_fr/fr_gg131/automl-project/tmp/BaseLine_budepoch/0/dask-scratch-space/worker-9whkzwtu",
+      "name": 2,
+      "nthreads": 1,
+      "memory_limit": 4294967296,
+      "last_seen": 1692840797.546812,
+      "services": {
+        "dashboard": 46777
+      },
+      "metrics": {
+        "task_counts": {},
+        "bandwidth": {
+          "total": 100000000,
+          "workers": {},
+          "types": {}
+        },
+        "digests_total_since_heartbeat": {},
+        "managed_bytes": 0,
+        "spilled_bytes": {
+          "memory": 0,
+          "disk": 0
+        },
+        "transfer": {
+          "incoming_bytes": 0,
+          "incoming_count": 0,
+          "incoming_count_total": 0,
+          "outgoing_bytes": 0,
+          "outgoing_count": 0,
+          "outgoing_count_total": 0
+        },
+        "event_loop_interval": 0.02,
+        "cpu": 0.0,
+        "memory": 334110720,
+        "time": 1692840790.4947531,
+        "host_net_io": {
+          "read_bps": 0.0,
+          "write_bps": 0.0
+        },
+        "host_disk_io": {
+          "read_bps": 0.0,
+          "write_bps": 0.0
+        },
+        "num_fds": 17
+      },
+      "status": "running",
+      "nanny": "tcp://127.0.0.1:37655"
+    }
+  }
+}

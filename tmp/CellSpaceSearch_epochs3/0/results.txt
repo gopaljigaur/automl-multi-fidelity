@@ -1,0 +1,3 @@
+Test score is: 0.6658333572000266
+error is: 0.33416664279997343
+incumbent is: {'batch_size': 33, 'budget_type': 'epochs', 'cv_count': 2, 'dataset': 'deepweedsx_balanced', 'datasetpath': '/pfs/data5/home/fr/fr_fr/fr_gg131/automl-project/data', 'device': 'cuda', 'dropout_rate': 0.2, 'global_avg_pooling': False, 'kernel_size': 3, 'learning_rate_init': 0.0006633205572216278, 'op_normal_0': 'aug_max_pool_3x3', 'op_normal_1': 'conv_5x5', 'op_normal_2': 'conv_5x5', 'op_normal_3': 'aug_max_pool_3x3', 'op_reduction_0': 'aug_max_pool_3x3', 'op_reduction_1': 'conv_3x3', 'op_reduction_2': 'conv_5x5', 'op_reduction_3': 'conv_5x5', 'use_BN': True, 'optimizer': 'Adam', 'train_criterion': 'crossentropy'}

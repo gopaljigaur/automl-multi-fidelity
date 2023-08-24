@@ -1,0 +1,177 @@
+{
+  "incumbent_ids": [
+    50
+  ],
+  "rejected_config_ids": [
+    3,
+    4,
+    16,
+    20,
+    35,
+    42
+  ],
+  "incumbents_changed": 7,
+  "trajectory": [
+    {
+      "config_ids": [
+        3
+      ],
+      "costs": [
+        0.4852144928851029
+      ],
+      "trial": 3,
+      "walltime": 473.54600167274475
+    },
+    {
+      "config_ids": [
+        4
+      ],
+      "costs": [
+        0.44745247028680135
+      ],
+      "trial": 4,
+      "walltime": 475.50212001800537
+    },
+    {
+      "config_ids": [
+        16
+      ],
+      "costs": [
+        0.40663611136948863
+      ],
+      "trial": 18,
+      "walltime": 2065.2877700328827
+    },
+    {
+      "config_ids": [
+        20
+      ],
+      "costs": [
+        0.33680410206826816
+      ],
+      "trial": 24,
+      "walltime": 2505.946029186249
+    },
+    {
+      "config_ids": [
+        35
+      ],
+      "costs": [
+        0.3334721650131275
+      ],
+      "trial": 43,
+      "walltime": 4536.450268030167
+    },
+    {
+      "config_ids": [
+        42
+      ],
+      "costs": [
+        0.3334721586269156
+      ],
+      "trial": 57,
+      "walltime": 6053.451039552689
+    },
+    {
+      "config_ids": [
+        50
+      ],
+      "costs": [
+        0.30626127357187005
+      ],
+      "trial": 67,
+      "walltime": 6949.325495004654
+    }
+  ],
+  "state": {
+    "tracker": {
+      "0,0": [
+        [
+          0,
+          [
+            {
+              "batch_size": 54,
+              "budget_type": "img_size",
+              "cv_count": 2,
+              "dataset": "deepweedsx_balanced",
+              "datasetpath": "/pfs/data5/home/fr/fr_fr/fr_gg131/automl-project/data",
+              "device": "cuda",
+              "dropout_rate": 0.2,
+              "global_avg_pooling": true,
+              "kernel_size": 3,
+              "learning_rate_init": 0.0007543475036333089,
+              "n_channels_conv_0": 94,
+              "n_channels_conv_1": 409,
+              "n_channels_fc_0": 125,
+              "n_conv_layers": 2,
+              "n_fc_layers": 1,
+              "use_BN": true
+            },
+            {
+              "batch_size": 21,
+              "budget_type": "img_size",
+              "cv_count": 2,
+              "dataset": "deepweedsx_balanced",
+              "datasetpath": "/pfs/data5/home/fr/fr_fr/fr_gg131/automl-project/data",
+              "device": "cuda",
+              "dropout_rate": 0.2,
+              "global_avg_pooling": true,
+              "kernel_size": 3,
+              "learning_rate_init": 2.2205108081983815e-05,
+              "n_channels_conv_0": 94,
+              "n_channels_conv_1": 409,
+              "n_channels_fc_0": 125,
+              "n_conv_layers": 2,
+              "n_fc_layers": 1,
+              "use_BN": false
+            }
+          ]
+        ]
+      ],
+      "1,0": [
+        [
+          0,
+          [
+            {
+              "batch_size": 26,
+              "budget_type": "img_size",
+              "cv_count": 2,
+              "dataset": "deepweedsx_balanced",
+              "datasetpath": "/pfs/data5/home/fr/fr_fr/fr_gg131/automl-project/data",
+              "device": "cuda",
+              "dropout_rate": 0.2,
+              "global_avg_pooling": true,
+              "kernel_size": 3,
+              "learning_rate_init": 0.007126197149987636,
+              "n_channels_conv_0": 94,
+              "n_channels_conv_1": 409,
+              "n_channels_fc_0": 125,
+              "n_conv_layers": 2,
+              "n_fc_layers": 1,
+              "use_BN": true
+            },
+            {
+              "batch_size": 54,
+              "budget_type": "img_size",
+              "cv_count": 2,
+              "dataset": "deepweedsx_balanced",
+              "datasetpath": "/pfs/data5/home/fr/fr_fr/fr_gg131/automl-project/data",
+              "device": "cuda",
+              "dropout_rate": 0.2,
+              "global_avg_pooling": true,
+              "kernel_size": 3,
+              "learning_rate_init": 0.001176590457966334,
+              "n_channels_conv_0": 94,
+              "n_channels_conv_1": 409,
+              "n_channels_fc_0": 125,
+              "n_conv_layers": 2,
+              "n_fc_layers": 1,
+              "use_BN": true
+            }
+          ]
+        ]
+      ]
+    },
+    "next_bracket": 0
+  }
+}

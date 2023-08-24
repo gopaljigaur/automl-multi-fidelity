@@ -1,0 +1,186 @@
+{
+  "incumbent_ids": [
+    63
+  ],
+  "rejected_config_ids": [
+    4,
+    8,
+    1,
+    5,
+    14,
+    27,
+    34
+  ],
+  "incumbents_changed": 8,
+  "trajectory": [
+    {
+      "config_ids": [
+        4
+      ],
+      "costs": [
+        0.5621268783151527
+      ],
+      "trial": 3,
+      "walltime": 397.4246470928192
+    },
+    {
+      "config_ids": [
+        8
+      ],
+      "costs": [
+        0.48549214612439695
+      ],
+      "trial": 8,
+      "walltime": 840.4157674312592
+    },
+    {
+      "config_ids": [
+        1
+      ],
+      "costs": [
+        0.4677217734632899
+      ],
+      "trial": 9,
+      "walltime": 1170.3658356666565
+    },
+    {
+      "config_ids": [
+        5
+      ],
+      "costs": [
+        0.38359015796493356
+      ],
+      "trial": 10,
+      "walltime": 1176.3493144512177
+    },
+    {
+      "config_ids": [
+        14
+      ],
+      "costs": [
+        0.35221432200456493
+      ],
+      "trial": 22,
+      "walltime": 2397.8490691184998
+    },
+    {
+      "config_ids": [
+        27
+      ],
+      "costs": [
+        0.33971955798339815
+      ],
+      "trial": 33,
+      "walltime": 3561.524756193161
+    },
+    {
+      "config_ids": [
+        34
+      ],
+      "costs": [
+        0.329307245356696
+      ],
+      "trial": 47,
+      "walltime": 4800.914571762085
+    },
+    {
+      "config_ids": [
+        63
+      ],
+      "costs": [
+        0.316118289232585
+      ],
+      "trial": 78,
+      "walltime": 7989.782865762711
+    }
+  ],
+  "state": {
+    "tracker": {
+      "0,0": [
+        [
+          0,
+          [
+            {
+              "batch_size": 41,
+              "budget_type": "img_size",
+              "cv_count": 2,
+              "dataset": "deepweedsx_balanced",
+              "datasetpath": "/pfs/data5/home/fr/fr_fr/fr_gg131/automl-project/data",
+              "device": "cuda",
+              "dropout_rate": 0.2,
+              "global_avg_pooling": true,
+              "kernel_size": 3,
+              "learning_rate_init": 0.000138153656700421,
+              "n_channels_conv_0": 101,
+              "n_channels_conv_1": 405,
+              "n_channels_fc_0": 123,
+              "n_conv_layers": 2,
+              "n_fc_layers": 1,
+              "use_BN": false
+            },
+            {
+              "batch_size": 49,
+              "budget_type": "img_size",
+              "cv_count": 2,
+              "dataset": "deepweedsx_balanced",
+              "datasetpath": "/pfs/data5/home/fr/fr_fr/fr_gg131/automl-project/data",
+              "device": "cuda",
+              "dropout_rate": 0.2,
+              "global_avg_pooling": true,
+              "kernel_size": 3,
+              "learning_rate_init": 0.000318558735297316,
+              "n_channels_conv_0": 90,
+              "n_channels_conv_1": 87,
+              "n_channels_fc_0": 45,
+              "n_conv_layers": 2,
+              "n_fc_layers": 1,
+              "use_BN": true
+            }
+          ]
+        ],
+        [
+          0,
+          [
+            {
+              "batch_size": 26,
+              "budget_type": "img_size",
+              "cv_count": 2,
+              "dataset": "deepweedsx_balanced",
+              "datasetpath": "/pfs/data5/home/fr/fr_fr/fr_gg131/automl-project/data",
+              "device": "cuda",
+              "dropout_rate": 0.2,
+              "global_avg_pooling": false,
+              "kernel_size": 3,
+              "learning_rate_init": 2.252044297063809e-05,
+              "n_channels_conv_0": 479,
+              "n_channels_conv_1": 425,
+              "n_channels_fc_0": 55,
+              "n_conv_layers": 2,
+              "n_fc_layers": 1,
+              "use_BN": true
+            },
+            {
+              "batch_size": 33,
+              "budget_type": "img_size",
+              "cv_count": 2,
+              "dataset": "deepweedsx_balanced",
+              "datasetpath": "/pfs/data5/home/fr/fr_fr/fr_gg131/automl-project/data",
+              "device": "cuda",
+              "dropout_rate": 0.2,
+              "global_avg_pooling": true,
+              "kernel_size": 3,
+              "learning_rate_init": 0.000148998106755129,
+              "n_channels_conv_0": 165,
+              "n_channels_conv_1": 405,
+              "n_channels_fc_0": 123,
+              "n_conv_layers": 2,
+              "n_fc_layers": 1,
+              "use_BN": true
+            }
+          ]
+        ]
+      ]
+    },
+    "next_bracket": 1
+  }
+}

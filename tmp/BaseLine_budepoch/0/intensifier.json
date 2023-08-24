@@ -1,0 +1,91 @@
+{
+  "incumbent_ids": [
+    38
+  ],
+  "rejected_config_ids": [
+    2,
+    9
+  ],
+  "incumbents_changed": 3,
+  "trajectory": [
+    {
+      "config_ids": [
+        2
+      ],
+      "costs": [
+        0.4628626792178987
+      ],
+      "trial": 7,
+      "walltime": 2179.870407819748
+    },
+    {
+      "config_ids": [
+        9
+      ],
+      "costs": [
+        0.4281549498740872
+      ],
+      "trial": 13,
+      "walltime": 4360.726236343384
+    },
+    {
+      "config_ids": [
+        38
+      ],
+      "costs": [
+        0.41829793027138096
+      ],
+      "trial": 54,
+      "walltime": 18948.111013174057
+    }
+  ],
+  "state": {
+    "tracker": {
+      "0,1": [
+        [
+          0,
+          [
+            {
+              "batch_size": 40,
+              "budget_type": "epochs",
+              "cv_count": 2,
+              "dataset": "deepweedsx_balanced",
+              "datasetpath": "/pfs/data5/home/fr/fr_fr/fr_gg131/automl-project/data",
+              "device": "cuda",
+              "dropout_rate": 0.2,
+              "global_avg_pooling": false,
+              "kernel_size": 3,
+              "learning_rate_init": 1.598807292731521e-05,
+              "n_channels_conv_0": 489,
+              "n_channels_fc_0": 45,
+              "n_conv_layers": 2,
+              "n_fc_layers": 1,
+              "use_BN": true,
+              "n_channels_conv_1": 220
+            },
+            {
+              "batch_size": 46,
+              "budget_type": "epochs",
+              "cv_count": 2,
+              "dataset": "deepweedsx_balanced",
+              "datasetpath": "/pfs/data5/home/fr/fr_fr/fr_gg131/automl-project/data",
+              "device": "cuda",
+              "dropout_rate": 0.2,
+              "global_avg_pooling": false,
+              "kernel_size": 3,
+              "learning_rate_init": 2.0363813849681374e-05,
+              "n_channels_conv_0": 363,
+              "n_channels_fc_0": 32,
+              "n_conv_layers": 2,
+              "n_fc_layers": 2,
+              "use_BN": true,
+              "n_channels_conv_1": 215,
+              "n_channels_fc_1": 60
+            }
+          ]
+        ]
+      ]
+    },
+    "next_bracket": 1
+  }
+}

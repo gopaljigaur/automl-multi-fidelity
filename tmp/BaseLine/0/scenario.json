@@ -1,0 +1,219 @@
+{
+    "name": "BaseLine",
+    "deterministic": true,
+    "objectives": "cost",
+    "crash_cost": Infinity,
+    "termination_cost_threshold": Infinity,
+    "walltime_limit": 21600,
+    "cputime_limit": Infinity,
+    "trial_walltime_limit": null,
+    "trial_memory_limit": null,
+    "n_trials": 500,
+    "use_default_config": false,
+    "instances": null,
+    "instance_features": null,
+    "min_budget": 12,
+    "max_budget": 32,
+    "seed": 0,
+    "n_workers": 1,
+    "_meta": {
+        "facade": {
+            "name": "MultiFidelityFacade"
+        },
+        "runner": {
+            "name": "TargetFunctionRunner",
+            "code": "b'z\\x06t\\x00\\x83\\x00j\\x01}\\x03W\\x00n\\x0b\\x04\\x00t\\x02y\\x11\\x01\\x00\\x01\\x00\\x01\\x00d\\x01}\\x03Y\\x00n\\x01w\\x00d\\x02}\\x04|\\x00d\\x03\\x19\\x00}\\x05|\\x00d\\x04\\x19\\x00}\\x06|\\x00d\\x05\\x19\\x00}\\x07|\\x00d\\x06\\x19\\x00}\\x08|\\x00d\\x07\\x19\\x00}\\tt\\x03d\\x08t\\x04t\\x05\\xa0\\x06|\\x02\\xa1\\x01\\x83\\x01\\x83\\x02}\\nt\\x07\\xa0\\x08|\\x01\\xa1\\x01\\x01\\x00t\\x07\\xa0\\t|\\x07\\xa1\\x01}\\x0bd\\t|\\x06v\\x00rLt\\nt\\x0b|\\td\\n\\x83\\x02d\\x0b\\x8d\\x01\\\\\\x03}\\x0c}\\r}\\x0en\\x19d\\x0c|\\x06v\\x00rct\\x0ct\\x0b|\\td\\x0c\\x83\\x02|\\n|\\nf\\x02d\\r|\\x06v\\x00|\\x04d\\x0e\\x8d\\x04\\\\\\x03}\\x0c}\\r}\\x0en\\x02t\\r\\x82\\x01t\\x0ed\\x0ft\\x0fd\\x02d\\x10\\x8d\\x03}\\x0fg\\x00}\\x10|\\x0f\\xa0\\x10|\\r|\\rj\\x11\\xa1\\x02}\\x11t\\x12|\\x11d\\x11d\\x12\\x8d\\x02D\\x00]\\xb4\\\\\\x02}\\x12\\\\\\x02}\\x13}\\x14t\\x13\\xa0\\x14d\\x13|\\x03\\x9b\\x00d\\x14|\\x12\\x9b\\x00d\\x15\\x9d\\x05\\xa1\\x01\\x01\\x00t\\x15|\\rt\\x16|\\x13\\x83\\x01\\x83\\x02}\\x15t\\x15|\\rt\\x16|\\x14\\x83\\x01\\x83\\x02}\\x16t\\x17|\\x15|\\x08d\\x02d\\x16\\x8d\\x03}\\x17t\\x17|\\x16|\\x08d\\x17d\\x16\\x8d\\x03}\\x18t\\x18|\\x00|\\x0ct\\x19|\\rj\\x1a\\x83\\x01d\\x18\\x8d\\x03}\\x19|\\x19\\xa0\\x1b|\\x0b\\xa1\\x01}\\x19t\\x1c|\\x00\\x83\\x01\\\\\\x02}\\x1a}\\x1b|\\x1a|\\x19\\xa0\\x1d\\xa1\\x00|\\x05d\\x19\\x8d\\x02}\\x1cd\\x1a|\\x00v\\x00r\\xd5|\\x1a|\\x19\\xa0\\x1d\\xa1\\x00|\\x05|\\x00d\\x1a\\x19\\x00d\\x1b\\x8d\\x03}\\x1c|\\x1b\\x83\\x00\\xa0\\x1b|\\x07\\xa1\\x01}\\x1bt\\x1ed\\x1c\\x83\\x01D\\x00]8}\\x1dt\\x13\\xa0\\x14d\\x13|\\x03\\x9b\\x00d\\x1d\\x9d\\x03d\\x1e\\x17\\x00\\xa1\\x01\\x01\\x00t\\x13\\xa0\\x14d\\x13|\\x03\\x9b\\x00d\\x1f|\\x1dd\\x11\\x17\\x00\\x9b\\x00d d\\x1c\\x9b\\x00d!\\x9d\\x07\\xa1\\x01\\x01\\x00|\\x19j\\x1f|\\x1c|\\x1b|\\x17|\\x0bd\"\\x8d\\x04\\\\\\x02}\\x1e}\\x1ft\\x13\\xa0\\x14d\\x13|\\x03\\x9b\\x00d#|\\x1ed$\\x9b\\x04d%|\\x1f\\x9b\\x00\\x9d\\x06\\xa1\\x01\\x01\\x00q\\xdf|\\x19\\xa0 |\\x18|\\x07\\xa1\\x02} t\\x13\\xa0\\x14d\\x13|\\x03\\x9b\\x00d&| d$\\x9b\\x04\\x9d\\x04\\xa1\\x01\\x01\\x00|\\x10\\xa0!| \\xa1\\x01\\x01\\x00q{d\\x11t\\x05\\xa0\"|\\x10\\xa1\\x01\\x18\\x00}!|!}\"|\"S\\x00'"
+        },
+        "model": {
+            "name": "RandomForest",
+            "types": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0
+            ],
+            "bounds": [
+                [
+                    0,
+                    1.0
+                ],
+                [
+                    0,
+                    NaN
+                ],
+                [
+                    0,
+                    NaN
+                ],
+                [
+                    0,
+                    NaN
+                ],
+                [
+                    0,
+                    NaN
+                ],
+                [
+                    0,
+                    NaN
+                ],
+                [
+                    0,
+                    NaN
+                ],
+                [
+                    2,
+                    NaN
+                ],
+                [
+                    0,
+                    NaN
+                ],
+                [
+                    0,
+                    1.0
+                ],
+                [
+                    0,
+                    1.0
+                ],
+                [
+                    0,
+                    1.0
+                ],
+                [
+                    0,
+                    1.0
+                ],
+                [
+                    0,
+                    1.0
+                ],
+                [
+                    2,
+                    NaN
+                ],
+                [
+                    -1.0,
+                    1.0
+                ],
+                [
+                    -1.0,
+                    1.0
+                ],
+                [
+                    -1.0,
+                    1.0
+                ],
+                [
+                    -1.0,
+                    1.0
+                ]
+            ],
+            "pca_components": 7,
+            "n_trees": 10,
+            "n_points_per_tree": -1,
+            "ratio_features": 1.0,
+            "min_samples_split": 2,
+            "min_samples_leaf": 1,
+            "max_depth": 1048576,
+            "eps_purity": 1e-08,
+            "max_nodes": 1048576,
+            "bootstrapping": true
+        },
+        "acquisition_maximizer": {
+            "name": "LocalAndSortedRandomSearch",
+            "acquisition_function": {
+                "name": "EI",
+                "xi": 0.0,
+                "log": true
+            },
+            "challengers": 10000,
+            "seed": 0,
+            "random_search": {
+                "name": "RandomSearch",
+                "acquisition_function": {
+                    "name": "EI",
+                    "xi": 0.0,
+                    "log": true
+                },
+                "challengers": 5000,
+                "seed": 0
+            },
+            "local_search": {
+                "name": "LocalSearch",
+                "acquisition_function": {
+                    "name": "EI",
+                    "xi": 0.0,
+                    "log": true
+                },
+                "challengers": 5000,
+                "seed": 0,
+                "max_steps": null,
+                "n_steps_plateau_walk": 10,
+                "vectorization_min_obtain": 2,
+                "vectorization_max_obtain": 64
+            }
+        },
+        "acquisition_function": {
+            "name": "EI",
+            "xi": 0.0,
+            "log": true
+        },
+        "intensifier": {
+            "name": "Hyperband",
+            "max_incumbents": 10,
+            "seed": 0,
+            "eta": 2,
+            "instance_seed_order": "shuffle_once",
+            "incumbent_selection": "highest_budget"
+        },
+        "initial_design": {
+            "name": "RandomInitialDesign",
+            "n_configs": 2,
+            "n_configs_per_hyperparameter": 10,
+            "additional_configs": [],
+            "seed": 0
+        },
+        "random_design": {
+            "name": "ProbabilityRandomDesign",
+            "seed": 0,
+            "probability": 0.2
+        },
+        "runhistory_encoder": {
+            "name": "RunHistoryLogScaledEncoder",
+            "considered_states": [
+                1,
+                2,
+                4
+            ],
+            "lower_budget_states": [],
+            "scale_percentage": 5,
+            "seed": 0
+        },
+        "multi_objective_algorithm": null,
+        "config_selector": {
+            "name": "ConfigSelector",
+            "retrain_after": 8,
+            "retries": 16,
+            "min_trials": 1
+        },
+        "version": "2.0.2"
+    },
+    "output_directory": "tmp/BaseLine/0"
+}

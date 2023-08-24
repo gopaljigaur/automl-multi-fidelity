@@ -1,0 +1,96 @@
+{
+  "incumbent_ids": [
+    42
+  ],
+  "rejected_config_ids": [
+    2,
+    4,
+    6,
+    16
+  ],
+  "incumbents_changed": 5,
+  "trajectory": [
+    {
+      "config_ids": [
+        2
+      ],
+      "costs": [
+        0.43745659504204204
+      ],
+      "trial": 3,
+      "walltime": 1230.2310333251953
+    },
+    {
+      "config_ids": [
+        4
+      ],
+      "costs": [
+        0.4339858425953612
+      ],
+      "trial": 5,
+      "walltime": 1966.2215511798859
+    },
+    {
+      "config_ids": [
+        6
+      ],
+      "costs": [
+        0.4135776939374547
+      ],
+      "trial": 8,
+      "walltime": 3071.5003130435944
+    },
+    {
+      "config_ids": [
+        16
+      ],
+      "costs": [
+        0.3874774258689807
+      ],
+      "trial": 20,
+      "walltime": 7519.466039180756
+    },
+    {
+      "config_ids": [
+        42
+      ],
+      "costs": [
+        0.38539494281239295
+      ],
+      "trial": 53,
+      "walltime": 19671.851505041122
+    }
+  ],
+  "state": {
+    "tracker": {
+      "0,1": [
+        [
+          0,
+          [
+            {
+              "batch_size": 16,
+              "budget_type": "img_size",
+              "cv_count": 2,
+              "dataset": "deepweedsx_balanced",
+              "datasetpath": "/pfs/data5/home/fr/fr_fr/fr_gg131/automl-project/data",
+              "device": "cuda",
+              "dropout_rate": 0.2,
+              "global_avg_pooling": true,
+              "kernel_size": 3,
+              "learning_rate_init": 0.0008523635972711015,
+              "n_channels_conv_0": 269,
+              "n_channels_fc_0": 112,
+              "n_conv_layers": 3,
+              "n_fc_layers": 2,
+              "use_BN": true,
+              "n_channels_conv_1": 219,
+              "n_channels_conv_2": 36,
+              "n_channels_fc_1": 51
+            }
+          ]
+        ]
+      ]
+    },
+    "next_bracket": 1
+  }
+}

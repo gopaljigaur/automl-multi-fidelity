@@ -1,0 +1,105 @@
+{
+  "incumbent_ids": [
+    41
+  ],
+  "rejected_config_ids": [
+    1,
+    4,
+    39
+  ],
+  "incumbents_changed": 4,
+  "trajectory": [
+    {
+      "config_ids": [
+        1
+      ],
+      "costs": [
+        0.3813688617970784
+      ],
+      "trial": 3,
+      "walltime": 1098.878710269928
+    },
+    {
+      "config_ids": [
+        4
+      ],
+      "costs": [
+        0.3676245873497871
+      ],
+      "trial": 5,
+      "walltime": 1817.4923822879791
+    },
+    {
+      "config_ids": [
+        39
+      ],
+      "costs": [
+        0.3574899150715195
+      ],
+      "trial": 49,
+      "walltime": 17729.773350715637
+    },
+    {
+      "config_ids": [
+        41
+      ],
+      "costs": [
+        0.3541580067160608
+      ],
+      "trial": 53,
+      "walltime": 19179.21625304222
+    }
+  ],
+  "state": {
+    "tracker": {
+      "1,0": [
+        [
+          0,
+          [
+            {
+              "batch_size": 40,
+              "budget_type": "img_size",
+              "cv_count": 2,
+              "dataset": "deepweedsx_balanced",
+              "datasetpath": "/pfs/data5/home/fr/fr_fr/fr_gg131/automl-project/data",
+              "device": "cuda",
+              "dropout_rate": 0.24223496491306698,
+              "global_avg_pooling": true,
+              "kernel_size": 3,
+              "learning_rate_init": 0.0002282401341444214,
+              "n_channels_conv_0": 125,
+              "n_channels_fc_0": 32,
+              "n_conv_layers": 3,
+              "n_fc_layers": 2,
+              "use_BN": "true",
+              "n_channels_conv_1": 455,
+              "n_channels_conv_2": 192,
+              "n_channels_fc_1": 37
+            },
+            {
+              "batch_size": 44,
+              "budget_type": "img_size",
+              "cv_count": 2,
+              "dataset": "deepweedsx_balanced",
+              "datasetpath": "/pfs/data5/home/fr/fr_fr/fr_gg131/automl-project/data",
+              "device": "cuda",
+              "dropout_rate": 0.26042928297772094,
+              "global_avg_pooling": true,
+              "kernel_size": 3,
+              "learning_rate_init": 0.00026203013324226223,
+              "n_channels_conv_0": 154,
+              "n_channels_fc_0": 36,
+              "n_conv_layers": 3,
+              "n_fc_layers": 2,
+              "use_BN": "true",
+              "n_channels_conv_1": 461,
+              "n_channels_conv_2": 182,
+              "n_channels_fc_1": 38
+            }
+          ]
+        ]
+      ]
+    },
+    "next_bracket": 0
+  }
+}

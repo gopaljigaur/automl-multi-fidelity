@@ -1,0 +1,231 @@
+{
+  "incumbent_ids": [
+    111
+  ],
+  "rejected_config_ids": [
+    4,
+    7,
+    8,
+    6,
+    11,
+    14,
+    24,
+    43,
+    72,
+    96
+  ],
+  "incumbents_changed": 11,
+  "trajectory": [
+    {
+      "config_ids": [
+        4
+      ],
+      "costs": [
+        0.44745243822864333
+      ],
+      "trial": 3,
+      "walltime": 437.11072731018066
+    },
+    {
+      "config_ids": [
+        7
+      ],
+      "costs": [
+        0.41468833919599557
+      ],
+      "trial": 7,
+      "walltime": 878.257330417633
+    },
+    {
+      "config_ids": [
+        8
+      ],
+      "costs": [
+        0.36012769707750236
+      ],
+      "trial": 8,
+      "walltime": 890.1888816356659
+    },
+    {
+      "config_ids": [
+        6
+      ],
+      "costs": [
+        0.3526308730425135
+      ],
+      "trial": 11,
+      "walltime": 1343.953078508377
+    },
+    {
+      "config_ids": [
+        11
+      ],
+      "costs": [
+        0.3491600590858748
+      ],
+      "trial": 13,
+      "walltime": 1717.1348023414612
+    },
+    {
+      "config_ids": [
+        14
+      ],
+      "costs": [
+        0.3391642485263363
+      ],
+      "trial": 22,
+      "walltime": 2659.988401412964
+    },
+    {
+      "config_ids": [
+        24
+      ],
+      "costs": [
+        0.33874774502682614
+      ],
+      "trial": 29,
+      "walltime": 3510.1999781131744
+    },
+    {
+      "config_ids": [
+        43
+      ],
+      "costs": [
+        0.32680827845987004
+      ],
+      "trial": 53,
+      "walltime": 6101.029826641083
+    },
+    {
+      "config_ids": [
+        72
+      ],
+      "costs": [
+        0.32264334564881414
+      ],
+      "trial": 89,
+      "walltime": 10002.718947410583
+    },
+    {
+      "config_ids": [
+        96
+      ],
+      "costs": [
+        0.32236568501582996
+      ],
+      "trial": 119,
+      "walltime": 13173.280339717865
+    },
+    {
+      "config_ids": [
+        111
+      ],
+      "costs": [
+        0.30889904934317647
+      ],
+      "trial": 138,
+      "walltime": 15296.690975189209
+    }
+  ],
+  "state": {
+    "tracker": {
+      "0,0": [
+        [
+          0,
+          [
+            {
+              "batch_size": 64,
+              "budget_type": "epochs",
+              "cv_count": 2,
+              "dataset": "deepweedsx_balanced",
+              "datasetpath": "/pfs/data5/home/fr/fr_fr/fr_gg131/automl-project/data",
+              "device": "cuda",
+              "dropout_rate": 0.2,
+              "global_avg_pooling": false,
+              "kernel_size": 3,
+              "learning_rate_init": 0.0002987804017579852,
+              "op_normal_0": "conv_3x3",
+              "op_normal_1": "conv_3x3",
+              "op_normal_2": "conv_3x3",
+              "op_normal_3": "conv_3x3",
+              "op_reduction_0": "conv_5x5",
+              "op_reduction_1": "aug_max_pool_3x3",
+              "op_reduction_2": "aug_max_pool_3x3",
+              "op_reduction_3": "conv_3x3",
+              "use_BN": true
+            },
+            {
+              "batch_size": 58,
+              "budget_type": "epochs",
+              "cv_count": 2,
+              "dataset": "deepweedsx_balanced",
+              "datasetpath": "/pfs/data5/home/fr/fr_fr/fr_gg131/automl-project/data",
+              "device": "cuda",
+              "dropout_rate": 0.2,
+              "global_avg_pooling": true,
+              "kernel_size": 3,
+              "learning_rate_init": 0.0021391882632084175,
+              "op_normal_0": "aug_max_pool_3x3",
+              "op_normal_1": "conv_5x5",
+              "op_normal_2": "aug_max_pool_3x3",
+              "op_normal_3": "aug_max_pool_3x3",
+              "op_reduction_0": "aug_max_pool_3x3",
+              "op_reduction_1": "conv_5x5",
+              "op_reduction_2": "conv_3x3",
+              "op_reduction_3": "conv_3x3",
+              "use_BN": false
+            }
+          ]
+        ],
+        [
+          0,
+          [
+            {
+              "batch_size": 64,
+              "budget_type": "epochs",
+              "cv_count": 2,
+              "dataset": "deepweedsx_balanced",
+              "datasetpath": "/pfs/data5/home/fr/fr_fr/fr_gg131/automl-project/data",
+              "device": "cuda",
+              "dropout_rate": 0.2,
+              "global_avg_pooling": true,
+              "kernel_size": 3,
+              "learning_rate_init": 8.02458879150981e-05,
+              "op_normal_0": "aug_max_pool_3x3",
+              "op_normal_1": "conv_3x3",
+              "op_normal_2": "conv_3x3",
+              "op_normal_3": "conv_5x5",
+              "op_reduction_0": "aug_max_pool_3x3",
+              "op_reduction_1": "aug_max_pool_3x3",
+              "op_reduction_2": "conv_5x5",
+              "op_reduction_3": "aug_max_pool_3x3",
+              "use_BN": false
+            },
+            {
+              "batch_size": 64,
+              "budget_type": "epochs",
+              "cv_count": 2,
+              "dataset": "deepweedsx_balanced",
+              "datasetpath": "/pfs/data5/home/fr/fr_fr/fr_gg131/automl-project/data",
+              "device": "cuda",
+              "dropout_rate": 0.2,
+              "global_avg_pooling": true,
+              "kernel_size": 3,
+              "learning_rate_init": 6.820340729713695e-05,
+              "op_normal_0": "aug_max_pool_3x3",
+              "op_normal_1": "conv_5x5",
+              "op_normal_2": "conv_3x3",
+              "op_normal_3": "conv_3x3",
+              "op_reduction_0": "aug_max_pool_3x3",
+              "op_reduction_1": "conv_3x3",
+              "op_reduction_2": "conv_5x5",
+              "op_reduction_3": "aug_max_pool_3x3",
+              "use_BN": false
+            }
+          ]
+        ]
+      ]
+    },
+    "next_bracket": 1
+  }
+}
