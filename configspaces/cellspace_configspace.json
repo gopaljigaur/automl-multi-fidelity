@@ -9,7 +9,7 @@
     {
       "name": "budget_type",
         "type": "constant",
-        "value": "epochs"
+        "value": "image_size"
     },
     {
       "name": "device",
