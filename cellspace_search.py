@@ -65,7 +65,7 @@ class Cell(nn.Module):
         super(Cell, self).__init__()
         self.reduction = reduction
 
-        if self.reduction == True:
+        if self.reduction:
             self.op0 = OPS[ops[0]](2 * d, d // 8, stride=1)
             self.op1 = OPS[ops[1]](d + d // 8, d // 8, stride=1)
             self.op2 = OPS[ops[2]](d // 4, d // 8, stride=1)

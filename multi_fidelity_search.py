@@ -11,6 +11,7 @@ from pathlib import Path
 from typing import Any, Mapping, Optional
 from functools import partial
 import time
+from torchvision import transforms
 
 import numpy as np
 import torch
@@ -175,7 +176,9 @@ def cnn_from_cfg(
     device = cfg["device"]
     batch_size = cfg["batch_size"]
     ds_path = cfg["datasetpath"]
-
+    rand_flip = transforms.RandomHorizontalFlip() if cfg["rand_flip"] else None
+    rand_rot = transforms.RandomRotation(20) if cfg["rand_rot"] else None
+    trans_form = [rand_flip, rand_rot] if rand_flip or rand_rot else []
     # unchangeable constants that need to be adhered to, the maximum fidelities
     img_size = max(4, int(np.floor(budget)))  # example fidelity to use
 
@@ -191,6 +194,7 @@ def cnn_from_cfg(
             resize=(img_size, img_size),
             balanced="balanced" in dataset,
             download=download,
+            transform=trans_form
         )
     else:
         raise NotImplementedError

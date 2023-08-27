@@ -13,7 +13,6 @@ from tqdm import tqdm
 from utils import StatTracker, accuracy, get_output_shape
 from dask.distributed import get_worker
 
-
 logger = logging.getLogger(__name__)
 
 
