@@ -22,7 +22,7 @@ from dask.distributed import get_worker
 sys.path.append(dirname(dirname(abspath(__file__))))
 logger = logging.getLogger(__name__)
 
-
+# Maxpool2d layer with channel control
 class AugMaxPool(nn.Module):
     def __init__(self, C_in, C_out, stride, padding):
         super(AugMaxPool, self).__init__()
@@ -61,8 +61,12 @@ OPS = {
 
 
 class Cell(nn.Module):
+    """
+    Class for the cell in the network
+    """
     def __init__(self, d, ops, reduction=False):
         super(Cell, self).__init__()
+        # if reduction cell
         self.reduction = reduction
 
         if self.reduction:
@@ -91,16 +95,16 @@ class Cell(nn.Module):
 
 
 class CellSpaceNetwork(nn.Module):
-    """Base class for the search model (one-shot model)."""
-
+    """Base class for the search model"""
     def __init__(self,
                  config: Mapping[str, Any],
                  input_shape: tuple[int, int, int],
                  num_classes: int
                  ):
         """
-        :device: str; 'cuda' or 'cpu'
-        :nodes: int; number of intermediate nodes in each cell
+        :config: configuration dictionary
+        :input_shape: input shape of the data
+        :num_classes: number of classes for output
         """
         super(CellSpaceNetwork, self).__init__()
         try:
@@ -109,7 +113,7 @@ class CellSpaceNetwork(nn.Module):
             self.my_worker_id = 0
 
         self.config = config
-        # d = 64 // 2 = 32
+
         num_channels = 128
 
         self.input_stem = nn.Sequential(
@@ -122,7 +126,7 @@ class CellSpaceNetwork(nn.Module):
             nn.BatchNorm2d(num_channels // 2)
         )
 
-        # prevprev , prev
+        # Obtain the operations from the config for the cells
         self.normal_ops = [config['op_normal_' + str(i)] for i in range(4)]
         self.reduction_ops = [config['op_reduction_' + str(i)] for i in range(4)]
 
@@ -142,14 +146,18 @@ class CellSpaceNetwork(nn.Module):
         self.time_train = 0
 
     def forward(self, input):
+        """
+        Forward pass of the network
+        :input: input data
+        """
         x_prev = self.input_stem(input)
         x = self.stem(x_prev)
-        # logger.info("input shape: %s", x.shape)
+
         for i, cell in enumerate(self.cells):
             x, x_prev = cell(x_prev, x), x
 
         out = self.global_pooling(x)
-        # logger.info("Global pooling shape: %s", out.shape)
+
         logits = self.dropout(self.classifier(out.view(out.size(0), -1)))
         return logits
 
@@ -161,12 +169,10 @@ class CellSpaceNetwork(nn.Module):
             device: str | torch.device,
     ) -> tuple[float, float]:
         """Training method.
-
-        :param optimizer: optimization algorithm
+        :optimizer: optimization algorithm
         :criterion: loss function
-        :param loader: data loader for either training or testing set
-        :param device: torch device
-        :param train: boolean to indicate if training or test set is used
+        :loader: data loader for either training or testing set
+        :device: torch device
         :return: (accuracy, loss) on the data
         """
         time_begin = time.time()
@@ -210,10 +216,8 @@ class CellSpaceNetwork(nn.Module):
             device: str | torch.device,
     ) -> float:
         """Evaluation method
-
-        :param loader: data loader for either training or testing set
-        :param device: torch device
-
+        :loader: data loader for either training or testing set
+        :device: torch device
         :return: accuracy on the data
         """
         score_tracker = StatTracker()

@@ -98,21 +98,24 @@ if __name__ == "__main__":
 
     # config for test
     config = {
-          "batch_size": 17,
-        "budget_type": "epochs",
+        "batch_size": 56,
+        "budget_type": "image_size",
         "cv_count": 2,
         "dataset": "deepweedsx_balanced",
-        "datasetpath": "./data/",
+        "datasetpath": "/pfs/data5/home/fr/fr_fr/fr_gg131/automl-project/data",
         "device": "cuda",
         "dropout_rate": 0.2,
         "global_avg_pooling": True,
         "kernel_size": 3,
-        "learning_rate_init": 0.00011271113233919768,
-        "n_channels_conv_0": 351,
-        "n_channels_conv_1": 190,
-        "n_channels_fc_0": 37,
-        "n_conv_layers": 2,
-        "n_fc_layers": 1,
+        "learning_rate_init": 0.0005970136907669507,
+        "op_normal_0": "conv_3x3",
+        "op_normal_1": "conv_3x3",
+        "op_normal_2": "aug_max_pool_3x3",
+        "op_normal_3": "conv_5x5",
+        "op_reduction_0": "aug_max_pool_3x3",
+        "op_reduction_1": "conv_5x5",
+        "op_reduction_2": "conv_5x5",
+        "op_reduction_3": "conv_5x5",
         "use_BN": True
     }
     if "optimizer" not in config:
@@ -121,7 +124,8 @@ if __name__ == "__main__":
     if "train_criterion" not in config:
         config["train_criterion"] = "crossentropy"
 
-    model = Model
+    # Select the model
+    model = CellSpaceNetwork
     score, error = cnn_from_cfg_test(config, model, SEED)
     print(f"Test score is: {score}")
     print(f"error is: {error}")

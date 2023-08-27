@@ -338,7 +338,7 @@ if __name__ == "__main__":
     # append ./configspaces to the configspace argument
     args.configspace = Path("configspaces", args.configspace)
 
-    # Set up the target model
+    # Set up the target model to be used/optimized
     if "CellSpaceSearch" in args.scenario:
         TargetModel = CellSpaceNetwork
         # if configspace is not specified, use the cellspace one
@@ -403,7 +403,8 @@ if __name__ == "__main__":
         logging.info("Restarting optimization with new configspace for HPO.")
         inc_config = incumbent.get_dictionary()
 
-        # generate new configuration space from the output of inc_config. Fix the architecture parameters. And the range of hyperparameters is +- 20%
+        # generate new configuration space from the output of inc_config. Fix the architecture parameters.
+        # And the range of hyperparameters is +- 20%
         def get_new_configspace(inc_config, margin=0.2):
             logging.info(f"Hyperparameters will be tuned in the range of +- {margin * 100}% of the incumbent value.")
             config = dict()
@@ -472,7 +473,7 @@ if __name__ == "__main__":
                 eta=args.eta,
             ),
             overwrite=False,
-            logging_level=args.log_level,  # https://automl.github.io/SMAC3/main/advanced_usage/8_logging.html
+            logging_level=args.log_level,
         )
 
         incumbent = smac.optimize()
@@ -495,7 +496,7 @@ if __name__ == "__main__":
 
     logging.info(f"Test score is: {score}")
     logging.info(f"error is: {error}")
-    # Write these results in a comprehensive manner to a file in the output directory
+    # Write these results to results.txt in the output directory
     with open(Path(args.working_dir, args.scenario, str(args.seed), "results.txt"), "w") as fh:
         fh.write(f"Test score is: {score}\n")
         fh.write(f"error is: {error}\n")
